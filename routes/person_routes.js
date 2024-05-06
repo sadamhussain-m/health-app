@@ -16,7 +16,7 @@ router
       res.redirect('/login');
     }
     try {
-      res.render("pages/person/add",{title:"Add New House"});
+      res.render("pages/person/add");
     } catch (e) {
       res.status(400).render("pages/person/error", {title: 'error', error: e });
     }

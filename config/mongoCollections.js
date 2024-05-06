@@ -29,3 +29,5 @@ export const location=getCollectionFn('location');
 export const provider=getCollectionFn('provider');
 
 export const person=getCollectionFn('person');
+
+export const healthevents=getCollectionFn('health_events');
