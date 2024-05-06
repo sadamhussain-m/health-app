@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Login Page</title>
+    </head>
+
+    <body>
+
+        <main>
+            
+            <h2>Login Page</h2>
+            
+            <form id="login-form" method="post" action="/login">
+                
+                <label for="emailAddressInput">Email:</label>
+                <input type="email" name="emailAddressInput" id="emailAddressInput">
+                <br>
+                <br>
+
+                <label for="passwordInput">Password:</label>
+                <input type="password" name="passwordInput" id="passwordInput">
+                <br>
+                <br>
+
+                <% if (message) { %>
+                    <p class="invalid-credentials"><span style="color:red"> <%= message %> </span></p>
+                <% } %>
+                
+                <input type="submit" value="login">
+            </form>
+
+        </main>
+
+    </body>
+</html>

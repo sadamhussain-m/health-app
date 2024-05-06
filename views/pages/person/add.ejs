@@ -1,0 +1,245 @@
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+        <head>
+            <meta charset="utf-8">
+            <script src="/public/js/personValidator.js"></script>
+        </head>
+        
+        <body>
+
+            <main>
+                    <h2>Enter the details of the person :</h2>
+                <form id="personRegistration" action="/person/personRegister" method="post" class="personadd-form">
+                    
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName">
+                    <span style="color:red" id="firstNameError" hidden></span> <br>
+                    <br>
+                    <br>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName">
+                    <span style="color:red" id="lastNameError" hidden></span> <br>
+                    <br>
+                    <br>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <span style="color:red" id="genderError" hidden></span> <br>
+                    <br>
+                    <br>
+
+                    <label id="personDob" name="personDob">Select your DOB:</label>
+                    <input type="date" id="personDob" name="personDob">
+                    <span style="color:red" id="personDobError" hidden></span> <br>
+                    <br>
+                    <br>
+                    
+                    <label for="personAddress1">Address 1:</label>
+                    <textarea name="personAddress1" id="personAddress1"></textarea>
+                    <span style="color:red" id="personAddressError1" hidden></span> <br>
+                    <br>
+                    <br>
+                    
+                    <label for="personAddress2">Address 2:</label>
+                    <textarea name="personAddress2" id="personAddress2"></textarea>
+                    <span style="color:red" id="personAddressError2" hidden></span> <br>
+                    <br>
+                    <br>
+
+                    <label for="personCity">City:</label>
+                    <input type="text" name="personCity" id="personCity">
+                    <span style="color:red" id="cityError" hidden></span> <br>
+                    <br>
+                    <br>
+
+                    <label for="personState">State:</label>
+                 <select name="personState" id="personState">
+                    <option value="Alabama">Alabama</option>
+                    <option value="Alaska">Alaska</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Arkansas">Arkansas</option>
+                    <option value="California">California</option>
+                    <option value="Connecticut">Connecticut</option>
+                    <option value="Delaware">Delaware</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Idaho">Idaho</option>
+                    <option value="Illinois">Illinois</option>
+                    <option value="Indiana">Indiana</option>
+                    <option value="Iowa">Iowa</option>
+                    <option value="Kansas">Kansas</option>
+                    <option value="Kentucky">Kentucky</option>
+                    <option value="Louisiana">Louisiana</option>
+                    <option value="Maine">Maine</option>
+                    <option value="Maryland">Maryland</option>
+                    <option value="Massachusetts">Massachusetts</option>
+                    <option value="Michigan">Michigan</option>
+                    <option value="Minnesota">Minnesota</option>
+                    <option value="Mississippi">Mississippi</option>
+                    <option value="Missouri">Missouri</option>
+                    <option value="Montana">Montana</option>
+                    <option value="Nebraska">Nebraska</option>
+                    <option value="Nevada">Nevada</option>
+                    <option value="New Hampshire">New Hampshire</option>
+                    <option value="New Jersey">New Jersey</option>
+                    <option value="New Mexico">New Mexico</option>
+                    <option value="New York">New York</option>
+                    <option value="North Carolina">North Carolina</option>
+                    <option value="North Dakota">North Dakota</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Oklahoma">Oklahoma</option>
+                    <option value="Oregon">Oregon</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="Rhode Island">Rhode Island</option>
+                    <option value="South Carolina">South Carolina</option>
+                    <option value="South Dakota">South Dakota</option>
+                    <option value="Tennessee">Tennessee</option>
+                    <option value="Texas">Texas</option>
+                    <option value="Utah">Utah</option>
+                    <option value="Vermont">Vermont</option>
+                    <option value="Virginia">Virginia</option>
+                    <option value="Washington">Washington</option>
+                    <option value="West Virginia">West Virginia</option>
+                    <option value="Wisconsin">Wisconsin</option>
+                    <option value="Wyoming">Wyoming</option>
+                </select>
+                <span style="color:red" id="stateError" hidden></span> <br>
+                <br>
+                <br>
+                
+                <label id="personZipCode">Zip Code:</label>
+                <input type="text" id="personZipCode" name="personZipCode">
+                <span style="color:red" id="zipCodeError" hidden></span> <br>
+                <br>
+                <br>
+                <h2>Enter the health care provider details:</h2>
+
+                    <label for="providerName">Provider Name:</label>
+                    <input type="text" id="providerName" name="providerName">
+                    <span style="color:red" id="providerNameError" hidden></span> <br>
+                    <br>
+                    <br>
+                    <label for="providerSpeciality">Speciality :</label>
+                    <input type="text" id="providerSpeciality" name="providerSpeciality">
+                    <span style="color:red" id="specialityError" hidden></span> <br>
+                    <br>
+                    <br>
+
+                <h2>Enter the details of the care site :</h2>
+
+                <label for="careSiteName">Care Site Name :</label>
+                    <input type="text" id="careSiteName" name="careSiteName">
+                    <span style="color:red" id="careSiteNameError" hidden></span> <br>
+                    <br>
+                    <br>
+                <label for="placeOfService">Place Of Service :</label>
+
+                <select name="placeOfService" id="placeOfService">
+
+                    <option value="In-Patient">In-Patient</option>
+                    <option value="Out-Patient">Out-Patient</option>
+                    <option value="Pharmacy">Pharmacy</option>
+                </select>
+                <span style="color:red" id="placeOfServiceError" hidden></span> <br>
+
+                <br>
+                <br>
+
+                <label for="careSiteAddress1">Care Site Address 1:</label>
+                
+                <input type="text" id="careSiteAddress1" name="careSiteAddress1">
+                <span style="color:red" id="careSiteAddressError1" hidden></span> <br>
+                
+                <br>
+                <br>
+
+                <label for="careSiteAddress2">Care Site Address 2:</label>
+                <input type="text" id="careSiteAddress2" name="careSiteAddress2">
+                <span style="color:red" id="careSiteAddressError2" hidden></span> <br>
+                <br>
+                <br>
+
+                <label for="careSiteCity">City:</label>
+                <input type="text" name="careSiteCity" id="careSiteCity">
+                <span style="color:red" id="careSiteCityError" hidden></span> <br>
+                <br>
+                <br>
+
+                <label for="careSiteState">State:</label>
+             <select name="careSiteState" id="careSiteState">
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Arizona">Arizona</option>
+                <option value="Arkansas">Arkansas</option>
+                <option value="California">California</option>
+                <option value="Connecticut">Connecticut</option>
+                <option value="Delaware">Delaware</option>
+                <option value="Florida">Florida</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Idaho">Idaho</option>
+                <option value="Illinois">Illinois</option>
+                <option value="Indiana">Indiana</option>
+                <option value="Iowa">Iowa</option>
+                <option value="Kansas">Kansas</option>
+                <option value="Kentucky">Kentucky</option>
+                <option value="Louisiana">Louisiana</option>
+                <option value="Maine">Maine</option>
+                <option value="Maryland">Maryland</option>
+                <option value="Massachusetts">Massachusetts</option>
+                <option value="Michigan">Michigan</option>
+                <option value="Minnesota">Minnesota</option>
+                <option value="Mississippi">Mississippi</option>
+                <option value="Missouri">Missouri</option>
+                <option value="Montana">Montana</option>
+                <option value="Nebraska">Nebraska</option>
+                <option value="Nevada">Nevada</option>
+                <option value="New Hampshire">New Hampshire</option>
+                <option value="New Jersey">New Jersey</option>
+                <option value="New Mexico">New Mexico</option>
+                <option value="New York">New York</option>
+                <option value="North Carolina">North Carolina</option>
+                <option value="North Dakota">North Dakota</option>
+                <option value="Ohio">Ohio</option>
+                <option value="Oklahoma">Oklahoma</option>
+                <option value="Oregon">Oregon</option>
+                <option value="Pennsylvania">Pennsylvania</option>
+                <option value="Rhode Island">Rhode Island</option>
+                <option value="South Carolina">South Carolina</option>
+                <option value="South Dakota">South Dakota</option>
+                <option value="Tennessee">Tennessee</option>
+                <option value="Texas">Texas</option>
+                <option value="Utah">Utah</option>
+                <option value="Vermont">Vermont</option>
+                <option value="Virginia">Virginia</option>
+                <option value="Washington">Washington</option>
+                <option value="West Virginia">West Virginia</option>
+                <option value="Wisconsin">Wisconsin</option>
+                <option value="Wyoming">Wyoming</option>
+            </select>
+            <span style="color:red" id="careSiteStateError" hidden></span> 
+            <br>
+            <br>
+            
+            <label id="careSiteZipCode">Zip Code:</label>
+            <input type="text" id="careSiteZipCode" name="careSiteZipCode">
+            <span style="color:red" id="careSiteZipCodeError" hidden></span> <br>
+            
+            <br>
+            <br>
+
+            <button type="submit" >Submit</button>
+            
+        </form>
+
+            </main>
+        </body>
+
+        <script src="/public/js/personValidator.js"></script>
+    </html>
