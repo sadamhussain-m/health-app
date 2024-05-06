@@ -98,10 +98,10 @@ router.route("/eventRegister").post(async(req,res)=>{
     throw "care site name should be lesser than 255";
   }
 
-  // if(placeOfService!="In-Patient" || placeOfService!="Out-Patient" || placeOfService!="Pharmacy"){
+  if(placeOfService!="In-Patient" || placeOfService!="Out-Patient" || placeOfService!="Pharmacy"){
 
-  //   throw "Invalid care site's place of service";
-  // }
+    throw "Invalid care site's place of service";
+  }
 
   if(careSiteCity>255){
 
